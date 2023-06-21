@@ -7,13 +7,6 @@ import org.testng.annotations.Test;
 import pageobjects.WebTablesPage;
 
 public class TableTest extends BaseTest{
-//    private final TableRecord record = new TableRecord(
-//            "John",
-//            "Dou",
-//            "JohnDou@gmail.com",
-//            33,
-//            "5000",
-//            "QA");
 
     @Test(dataProvider = "tableRecords", dataProviderClass = TableRecordProvider.class)
     public void addNewRecordTest(TableRecord record){
